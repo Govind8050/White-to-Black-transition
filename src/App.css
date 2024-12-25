@@ -1,0 +1,132 @@
+.App {
+    min-height: 200vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 10;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Main Content Styling */
+  .content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  
+  /* Scroll Indicator */
+  .scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.2s ease;
+  }
+  
+  /* Search Box */
+  .search-box {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .search-box input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Book List Styling */
+  .book-list {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .book-item {
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .book-item img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .book-item h3 {
+    font-size: 18px;
+    color: black;
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 40px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 18px;
+  }
+  
+  /* For scroll effect */
+  .book-item:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-item:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+  }
